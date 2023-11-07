@@ -1,0 +1,40 @@
+ <!--<script>
+    function myFunctionRemlacerAdresse() {
+          let text = document.getElementById("mail").value;
+          let t1 = text.slice(0,1);
+          let array = text.split("@");
+          t1 = t1.concat("***@",array[1]);
+          document.getElementById("rep").innerHTML = t1;
+        }
+    </script-->
+<html>
+<head>
+</head>
+<body>
+<u><center><h4>Majuscule</h4></center></u>
+<center><table>
+    <form>
+        <tr>
+            <td><label>Saisir un texte</label></td>
+            <td><input id="tx" type="text"></td>
+        </tr>
+        
+    </form>
+    </table>
+    <br>
+    <p id="rep"></p>
+    <script>
+        function myFunction() {
+          let text = document.getElementById("tx").value;
+          text = text.split(",");
+          for (let i = 0; i < text.length; i++){
+            text[i]=text[i].charAt(0).toUpperCase() + text[i].slice(1);
+          }
+          document.getElementById("rep").innerHTML = text
+        }
+        
+    </script>
+    <button onclick="myFunction()">Remplacer</button>
+    </center>
+</body>
+</html>

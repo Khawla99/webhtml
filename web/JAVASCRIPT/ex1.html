@@ -1,0 +1,45 @@
+<html>
+<head>
+   
+</head>
+<body>
+<u><center><h1>Calculette</h1></center></u>
+<center><table>
+<form>
+    <tr>
+        <td><label>Saisir le 1er nombre</label></td>
+        <td><input id="un" type="text"/></td>
+    </tr>
+     <tr>
+        <td><label>Saisir le 2ème nombre</label></td>
+        <td><input id="deux" type="text"/></td>
+    </tr>
+    
+
+</form>
+</table>
+<br>
+<button onclick="
+ let a = parseFloat(getElementById('un').value);
+ let b = parseFloat(getElementById('deux').value);
+ let sum = x+y ;
+ alert('La somme des deux nombre est : ' +sum);">+</button> 
+<button onclick="
+ let c = parseFloat(getElementById('un').value);
+ let d = parseFloat(getElementById('deux').value);
+ let prod = x*y ;
+ alert('Le produit des deux nombre est : ' +prod);">x</button>
+<button onclick="
+ let e = parseFloat(getElementById('un').value);
+ let f = parseFloat(getElementById('deux').value);
+ let sup = x>y ;
+ alert(sup);">></button>
+<button onclick="
+ let x = parseFloat(getElementById('un').value);
+ let y = parseFloat(getElementById('deux').value);
+ let mod = x%y ;
+ alert('Le modulo des deux nombre est : ' +mod);">%</button>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+<u><center><h4>Liste de nom</h4></center></u>
+<center>
+
+    <p id="L1"></p>
+    <p id="L2"></p>
+    <p id="L3"></p>
+    <p id="L4"></p>
+    <p id="L5"></p>
+    <p id="L6"></p>
+
+    <script>
+        let tab1=["Ahmed","Anas","Achraf"];
+        document.getElementById("L1").innerHTML = tab1;
+        tab1.push("Safaa");
+        document.getElementById("L2").innerHTML = tab1;
+        tab1.unshift("Sanaa");
+        document.getElementById("L3").innerHTML = tab1;
+        tab1.splice(3,0,"Omar");
+        document.getElementById("L4").innerHTML = tab1;
+        delete tab1[2];
+        document.getElementById("L5").innerHTML = tab1;
+        tab1.splice(2,0,"Saad");
+        delete tab1[5];
+        document.getElementById("L6").innerHTML = tab1;
+        getElement.document="document"
+
+
+    </script>
+    
+    </center>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+<u><center><h4>Inverser</h4></center></u>
+<center><table>
+    <form>
+        <tr>
+            <td><label>Saisir un texte</label></td>
+            <td><input id="txt" type="text"></td>
+        </tr>
+        
+    </form>
+    </table>
+    <br>
+    <p id="rep"></p>
+    <script>
+        function myFunction() {
+          let tx = document.getElementById("txt").value;
+          tx=tx.split("");
+          let j = tx.length-1 ;
+          for (let i = 0; i < tx.length/2 ; i++){
+                let k;
+                k=tx[i];
+                tx[i]=tx[j];
+                tx[j]=k;
+                j--;
+
+          }
+          document.getElementById("rep").innerHTML = tx;
+        }
+        function myFunction1(){
+            let text = String(document.getElementById("txt").value);
+            for(let i = text.length-1 ; i >=0 ; i--){
+                document.write(text[i]);
+            }
+        }
+    </script>
+    <button onclick="myFunction1()">inverse</button>
+    </center>
+</body>
+</html>

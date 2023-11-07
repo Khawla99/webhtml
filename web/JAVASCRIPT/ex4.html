@@ -1,0 +1,42 @@
+<html>
+<head>
+   <script>
+    let x=getElementById("math").value;
+    let y=getElementById("pc").value;
+    let z=getElementById("eps").value;
+    let t=[x,y,z];
+    function moy(t){
+        return (t[0]+t[1]+t[2])/3;
+    }
+    
+
+    
+   </script>
+</head>
+<body>
+<u><center><h1>Calculer Moyenne Etudiant</h1></center></u>
+<center><table>
+<form>
+    <tr>
+        <td><label>Saisir la note du math</label></td>
+        <td><input id="math" type="text"/></td>
+    </tr>
+     <tr>
+        <td><label>Saisir la note du physique</label></td>
+        <td><input id="pc" type="text"/></td>
+    </tr>
+    <tr>
+        <td><label>Saisir la note du sport</label></td>
+        <td><input id="eps" type="text"/></td>
+    </tr>
+
+
+</form>
+</table>
+<br>
+<button onclick="
+ alert('La moyenne des notes est : ' +moy(t));">Calculer Moyenne</button>
+
+</center>
+</body>
+</html>

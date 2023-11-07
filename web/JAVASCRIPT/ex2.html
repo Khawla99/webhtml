@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script>
+        function conv(x){
+            return x/10.12;
+        };
+
+    </script>
+</head>
+<body>
+<u><center><h1>Conversion MAD to USD</h1></center></u>
+<center><table>
+<form>
+    <tr>
+        <td><label>Saisir le montant en MAD</label></td>
+        <td><input id="mont" type="text"/></td>
+    </tr>
+    
+</form>
+</table>
+<br>
+<button onclick="
+ let x = parseFloat(getElementById('mont').value);
+ alert('Le Montant en USD est : ' + conv(x));">Convert to USD</button>
+</center>
+</body>
+</html>

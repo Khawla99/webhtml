@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<body>
+<u><center><h4>Inverser</h4></center></u>
+<center><table>
+    <form>
+        <tr>
+            <td><label>Saisir le 1er tableau d'entier</label></td>
+            <td><input id="txt1" type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Saisir le 2ème tableau d'entier</label></td>
+            <td><input id="txt2" type="text"></td>
+        </tr>
+        
+    </form>
+    </table>
+    <br>
+    <p id="rep"></p>
+    <script>
+        function myFunction() {
+          let tx1 = document.getElementById("txt1").value;
+          let tx2 = document.getElementById("txt2").value;
+          tx1=tx1.split("");
+          tx2=tx2.split("");
+          let tx=[];
+          if(tx1.length>tx2.length){
+            length=tx2.length;
+            tx.length=tx1.length;
+          } else {
+          length=tx1.length;
+          tx.length=tx2.length;
+          }
+          for (let i = 0; i < length; i++){
+                parseFloat(tx[i])=parseFloat(tx1[i])*parseFloat(tx2[i]);
+          }
+          if(tx.length==tx1.length){
+            for (i = lengh; i < tx.length; i++){
+                tx.push(tx1[i]);
+            }
+          }else{
+            for (i = lengh; i < tx.length; i++){
+                tx.push(tx2[i]);
+          }
+        }
+        document.getElementById("rep").innerHTML = tx;
+        }    
+    </script>
+    <button onclick="myFunction1()">inverse</button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+    
+</head>
+<body>
+<u><center><h1>Calculette</h1></center></u>
+<center><table>
+<form>
+    <tr>
+        <td><label>Saisir le 1er nombre</label></td>
+        <td><input id="un" type="text"/></td>
+    </tr>
+     <tr>
+        <td><label>Saisir le 2ème nombre</label></td>
+        <td><input id="deux" type="text"/></td>
+    </tr>
+    <tr>
+        <td><label for="ops">Choisir l'operateur</label></td>
+        <td><select name="ops" id="trois">
+            <option value="+">+</option>
+            <option value="*">*</option>
+            <option value=">">></option>
+            <option value="%">%</option>
+          </select></td>
+    </tr>
+    
+    
+</form>
+</table>
+<button onclick="myFunction()">Calculer</button>
+<p id="aff"></p>
+<br>
+
+</center>
+<script>
+    function myFunction(){
+         let op = document.getElementById("trois").value;
+         let x = parseFloat(document.getElementById("un").value);
+         let y = parseFloat(document.getElementById("deux").value);
+         switch(op){
+          case "+":
+           let sum = x+y ;
+           document.getElementById("aff").innerHTML = sum;
+           break;
+          case "*":
+           let prod = x*y ;
+           document.getElementById("aff").innerHTML = prod;
+           break;
+          case ">":
+           let sup = x>y ;
+           document.getElementById("aff").innerHTML = sup;
+           break;
+          case "%":
+           let mod = x%y ;
+           document.getElementById("aff").innerHTML = mod;
+          break;
+         }
+}
+</script>
+</body>
+</html>
